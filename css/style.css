@@ -1,12 +1,12 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
 }
 
 .fa-solid {
@@ -55,73 +55,283 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
 }
 
+/******Navigation header***********/
+.logo {
+    width: 61.09px;
+    height: 19px;
+    top: 30px;
+    left: 50px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 68px;
+    color: #000000;
+}
+
+.lodging-link:hover {
+    color: #0065fc;
+    text-decoration: overline #0065fc 2px;
+}
+.activities-link:hover {
+    color: #0065fc;
+    text-decoration: overline #0065fc 2px;
+}
+/****** Formulaire header***********/
+form {
+    margin-top: 30px;
+    display: flex;
+}
+
+form .fa-solid {
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+}
+.search-button {
+    background-color: #0065fc;
+    color: #ffffff;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: bold;
+    border: #0065fc;
+    padding: 15px 16px 15px 16px;
+    cursor: pointer;
+}
+
+.search-text {
+    border: #f2f2f2 solid 1px;
+    font-weight: bold;
+    text-align: center;
+    width: 180px;
+}
+.search-text::placeholder {
+    color: #000000;
+}
+/****** Filtres header***********/
+.filters-title {
+    font-weight: bold;
+}
+.filtres {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.filter-button:hover {
+    background-color: #deebff;
+}
+.filter-button {
+    border: solid #d9d9d9 2px;
+    background-color: white;
+    border-radius: 25px;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 700;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+p .fa-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: #d9d9d9 solid 1px;
+    border-radius: 50% 50% 50% 50% / 47% 48% 52% 53%;
+    font-size: small;
+}
+.info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+}
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+.lodging-and-popular {
     display: flex;
     justify-content: space-between;
+    border-radius: 15px;
 }
 
-.hebergements-and-populaires section {
+.lodging-and-popular section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
-.hebergements {
-    width: 65%;
+.lodging {
+    padding: 20px 20px 20px 20px;
+}
+.horizontal-area {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.second-horizontal-area {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.card {
+    border-radius: 20px;
+    width: 250.33px;
+    height: 207.25px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    border: #ffffff 5px;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 124px;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0px 15px 0px 15px;
+}
+.card-title {
+    font-weight: 700;
+    font-size: 16px;
+}
+.card-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+}
+.card fa-xs {
+    width: 81px;
+    height: 13.25px;
+}
+.show-more {
+    font-weight: bold;
 }
 
 /****** Populaires ***********/
-.populaires {
-    width: 32%;
+.popular {
+    padding: 20px 20px 20px 20px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
-.populaires-title {
+.popular-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-cards .card {
+.popular-card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
-.populaires-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
+.popular-card img {
+    width: 40%;
+    height: 140px;
+    padding: 5px 5px 5px 5px;
     border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
 }
-
-.populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
+.popular-card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+/****** Ativitées ***********/
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 10px 60px 10px;
+}
+.activities-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
+.activities-content {
+    width: 90%;
+    border-radius: 20px;
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
 }
 
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
+.activities-content img {
+    border-radius: 20px 20px 0px 0px;
+    padding-bottom: 10px;
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
 }
 
+.activities-content h3 {
+    padding: 10px 10px 0px 15px;
+}
 
+/****** Footer ***********/
+.footer {
+    bottom: 0;
+    background-color: #f2f2f2;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.about h3 {
+    padding-bottom: 10px;
+}
+.accomodation h3{
+    padding-bottom: 10px;
+}
+.help h3{
+    padding-bottom: 10px;
+}
+.about li{ padding-bottom:10px ; 
+}
+.accomodation li{
+    padding-bottom: 10px;
+}
+.help li{
+    padding-bottom: 10px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
