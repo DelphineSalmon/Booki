@@ -15,6 +15,7 @@
             referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="css/normalizer.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" media="screen and (max-width: 1024px)" href="smallscreen.css" type="text/css" />
     </head>
 
     <body>
@@ -23,8 +24,8 @@
                 <nav class="nav">
                     <a href="#"><img src="images\logo\Booki.png" alt="Logo" class="logo"/></a>
                     <ul>
-                        <li class="onglet-link"><a href="#">Hébergements</a></li>
-                        <li class="onglet-link"><a href="#">Activités</a></li>
+                        <li class="onglet-link"><a href="#lodging">Hébergements</a></li>
+                        <li class="onglet-link"><a href="#activities">Activités</a></li>
                     </ul>
                 </nav>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -39,7 +40,7 @@
                         placeholder="Marseille, France"
                         size="30"
                         maxlength="100"/>
-                    <button class="search-button"><span>Rechercher</span><i class="<i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="search-button"><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <article class="filtres">
                     <p class="filters-title">Filtres</p>
@@ -52,7 +53,7 @@
             </header>
             <main>
                 <div class="lodging-and-popular">
-                    <section class="lodging">
+                    <section class="lodging" id="lodging">
                         <h2>Hébergements à Marseille</h2>
                         <article class="lodging-cards">
                             <div class="horizontal-area">
@@ -114,8 +115,6 @@
                                         </article>
                                     </article>
                                 </a>
-                            </div>
-                            <div class="second-horizontal-area">
                                 <a href="#">
                                     <article class="card">
                                         <img src="images\hebergements\annie-spratt.jpg" alt=" Image Hôtel de la mer"/>
@@ -243,7 +242,7 @@
                         </a>
                     </section>
                 </div>
-                <section class="activities">
+                <section class="activities" id="activities">
                     <h2>Activités à Marseille</h2>
                     <article class="activities-card">
                     <a href="#">
