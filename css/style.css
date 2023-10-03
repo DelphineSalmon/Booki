@@ -65,6 +65,7 @@ a {
     top: 30px;
     left: 50px;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -89,6 +90,7 @@ nav ul {
     top: -20px;
     width: 100%;
 }
+
 .onglet-link:hover {
     color: #0065fc;
 }
@@ -109,6 +111,7 @@ form .fa-solid {
     background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
 }
+
 .search-button {
     background-color: #0065fc;
     color: #ffffff;
@@ -128,13 +131,16 @@ form .fa-solid {
 .search-text::placeholder {
     color: #000000;
 }
+
 .fa-magnifying-glass {
     display: none;
 }
+
 /****** Filtres header***********/
 .filters-title {
     font-weight: bold;
 }
+
 .filtres {
     display: flex;
     align-items: center;
@@ -142,9 +148,11 @@ form .fa-solid {
     font-size: 18px;
     margin-top: 40px;
 }
+
 .filter-button:hover {
     background-color: #deebff;
 }
+
 .filter-button {
     border: solid #d9d9d9 2px;
     background-color: white;
@@ -157,6 +165,7 @@ form .fa-solid {
     align-items: center;
     cursor: pointer;
 }
+
 p .fa-info {
     display: flex;
     justify-content: center;
@@ -167,6 +176,7 @@ p .fa-info {
     border-radius: 50% 50% 50% 50% / 47% 48% 52% 53%;
     font-size: small;
 }
+
 .info {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -174,6 +184,7 @@ p .fa-info {
     font-size: 16px;
     gap: 10px;
 }
+
 /****** Hebergements And Populaires ***********/
 .lodging-and-popular {
     display: flex;
@@ -192,6 +203,7 @@ p .fa-info {
     padding: 20px 20px 20px 20px;
     width: 70%;
 }
+
 .horizontal-area {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -215,6 +227,7 @@ p .fa-info {
     width: 100%;
     height: 124px;
 }
+
 .card-content {
     display: flex;
     flex-direction: column;
@@ -222,18 +235,22 @@ p .fa-info {
     gap: 8px;
     padding: 0px 15px 0px 15px;
 }
+
 .card-title {
     font-weight: 700;
     font-size: 16px;
 }
+
 .card-subtitle {
     font-weight: 400;
     font-size: 14px;
 }
+
 .card fa-xs {
     width: 81px;
     height: 13.25px;
 }
+
 .show-more {
     font-weight: bold;
 }
@@ -268,6 +285,7 @@ p .fa-info {
     border-top-left-radius: 20px;
     object-fit: cover;
 }
+
 .popular-card-content {
     display: flex;
     flex-direction: column;
@@ -276,12 +294,12 @@ p .fa-info {
 }
 
 /****** Ativitées ***********/
-
 .activities {
     display: flex;
     flex-direction: column;
     margin: 60px 10px 60px 10px;
 }
+
 .activities-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -326,18 +344,23 @@ p .fa-info {
 .about h3 {
     padding-bottom: 10px;
 }
+
 .accomodation h3 {
     padding-bottom: 10px;
 }
+
 .help h3 {
     padding-bottom: 10px;
 }
+
 .about li {
     padding-bottom: 10px;
 }
+
 .accomodation li {
     padding-bottom: 10px;
 }
+
 .help li {
     padding-bottom: 10px;
 }
@@ -350,6 +373,11 @@ p .fa-info {
     .bloc {
         display: block;
         clear: both;
+    }
+
+    .main-container {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     /* lodging */
@@ -367,6 +395,7 @@ p .fa-info {
         display: flex;
         width: 100%;
     }
+
     .popular {
         display: flex;
         flex-wrap: wrap;
@@ -374,6 +403,7 @@ p .fa-info {
         margin-top: 50px;
         margin-left: 5px;
     }
+
     .popular a {
         width: calc(100% / 3);
     }
@@ -385,6 +415,7 @@ p .fa-info {
     .popular-card .card-subtitle {
         font-size: 13px;
     }
+
     /* activities */
     .activities {
         width: 100%;
@@ -398,9 +429,11 @@ p .fa-info {
         object-fit: cover;
         padding-bottom: 0px;
     }
+
     .activities-card {
         width: 100%;
     }
+
     .activities-content h3 {
         display: flex;
 
@@ -410,6 +443,7 @@ p .fa-info {
         font-size: 16px;
         height: 50px;
     }
+
     /* footer */
     .footer {
         display: flex;
@@ -428,6 +462,7 @@ p .fa-info {
         padding-right: 0px;
         width: 100%;
     }
+
     /* navigation header */
     header h1,
     form,
@@ -435,6 +470,7 @@ p .fa-info {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     header p {
         padding-left: 20px;
     }
@@ -446,145 +482,171 @@ p .fa-info {
         aspect-ratio: auto;
         object-fit: contain;
     }
+
     .nav {
         display: flex;
         flex-direction: column;
     }
+
     nav ul {
         width: 100%;
         gap: 0px;
     }
+
     .onglet-link {
         display: flex;
         width: 100%;
         justify-content: center;
     }
+
     .onglet-link::before {
         bottom: -20px;
         top: auto;
         background-color: #f2f2f2;
     }
-h1 {
-    font-size: 22px;
-    width: 100%;
-}
-.info {
-    padding-bottom: 0px;
-}
 
-/* barre de recherche*/
+    h1 {
+        font-size: 22px;
+        width: 100%;
+    }
 
-.search-button span {
-    display: none;
-}
-form .fa-magnifying-glass {
-    display: block;
-    color: #ffffff;
-    background-color: #0065fc;
-    border-radius: 20px;
-    filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.3));
-    margin-left: -15px;
-}
-.search-button {
-    padding: 0;
-    border-radius: 20px;
-}
-.search-text {
-    width: 70%;
-}
-/* filtres*/
-.filtres {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.filtres :first-child {
-    grid-column: 1 / -1;
-}
-.filter-button {
-    font-size: 13px;
-}
-.info {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 24px 1fr;
-    padding: 30px;
-}
-.info .fa-solid {
-    border-radius: 50% 50% 50% 50% / 47% 48% 52% 53%;
-}
-/* popular and lodging */
-.lodging-and-popular {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 30px;
-    height: 2130px;
-}
-/*lodging */
-.lodging {
-    background-color: transparent;
-    padding-top: 0px;
-}
+    .info {
+        padding-bottom: 0px;
+    }
 
-.horizontal-area {
-    display: flex;
-    flex-direction: column;
-}
-.horizontal-area :nth-child(1) {
-    order: 1;
-}
-.horizontal-area :nth-child(2) {
-    order: 6;
-}
-.horizontal-area :nth-child(3) {
-    order: 3;
-}
-.horizontal-area :nth-child(4) {
-    order: 4;
-}
-.horizontal-area :nth-child(5) {
-    order: 2;
-}
-.horizontal-area :nth-child(6) {
-    order: 5;
-}
-/* popular */
-.popular {
-    display: flex;
-    flex-direction: column;
-    border-radius: 0;
-    margin-left: 0px;
-    padding-bottom: 30px;
-}
+    /* barre de recherche*/
+    .search-button span {
+        display: none;
+    }
 
-.popular a {
-    width: 105%;
-}
+    form .fa-magnifying-glass {
+        display: block;
+        color: #ffffff;
+        background-color: #0065fc;
+        border-radius: 20px;
+        filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.3));
+        margin-left: -15px;
+    }
 
-/* activities */
-.activities {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 50px 0px 50px 10px;
-    width: 100%;
-}
-.activities-card {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    width: 100%;
-}
+    .search-button {
+        padding: 0;
+        border-radius: 20px;
+    }
 
-.activities-card img {
-    height: 150px;
-}
-/* footer*/
-.footer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.footer section {
-    width: 100%;
-}
+    .search-text {
+        width: 70%;
+    }
 
+    /* filtres*/
+    .filtres {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filtres :first-child {
+        grid-column: 1 / -1;
+    }
+
+    .filter-button {
+        font-size: 13px;
+    }
+
+    .info {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 24px 1fr;
+        padding: 30px;
+    }
+
+    .info .fa-solid {
+        border-radius: 50% 50% 50% 50% / 47% 48% 52% 53%;
+    }
+
+    /* popular and lodging */
+    .lodging-and-popular {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        height: 2130px;
+    }
+
+    /*lodging */
+    .lodging {
+        background-color: transparent;
+        padding-top: 0px;
+    }
+
+    .horizontal-area {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .horizontal-area :nth-child(1) {
+        order: 1;
+    }
+
+    .horizontal-area :nth-child(2) {
+        order: 6;
+    }
+
+    .horizontal-area :nth-child(3) {
+        order: 3;
+    }
+
+    .horizontal-area :nth-child(4) {
+        order: 4;
+    }
+
+    .horizontal-area :nth-child(5) {
+        order: 2;
+    }
+
+    .horizontal-area :nth-child(6) {
+        order: 5;
+    }
+
+    /* popular */
+    .popular {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        margin-left: 0px;
+        padding-bottom: 30px;
+    }
+
+    .popular a {
+        width: 105%;
+    }
+
+    /* activities */
+    .activities {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 50px 0px 50px 10px;
+        width: 100%;
+    }
+
+    .activities-card {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .activities-card img {
+        height: 150px;
+    }
+
+    /* footer*/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer section {
+        width: 100%;
+    }
+}
 /* ... */
